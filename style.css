@@ -1,0 +1,158 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Dark mood gradient background */
+    background: linear-gradient(135deg, #0f1016 0%, #1a1c29 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* App Container with Glassmorphism */
+.app-container {
+    width: 900px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Decorative glowing orbs behind the glass */
+.app-container::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.app-container::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Header */
+.header h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    color: #f8fafc;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 40px;
+}
+
+.start-btn {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border: none;
+    padding: 16px 48px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px -5px rgba(99, 102, 241, 0.6);
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.start-btn:active {
+    transform: translateY(1px);
+}
+
+/* Results Section */
+.results {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.results h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.results h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+/* Aliens Grid */
+.aliens-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.aliens-grid img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.aliens-grid img:hover {
+    transform: scale(1.05) translateY(-5px);
+    filter: drop-shadow(0 15px 25px rgba(139, 92, 246, 0.5));
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    color: #64748b;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}

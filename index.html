@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Identification Web App</title>
+  <!-- Google Fonts: Inter and Special Elite -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Special+Elite&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h2>Sound Controlled Aliens</h2>
+      <p>Note: Play different sounds like clap, snap, bell to make the aliens dance</p>
+    </header>
+
+    <main class="main-content">
+      <button class="start-btn" onclick="startClassification();">START</button>
+      <div class="results">
+        <h3 id="result_label">I can hear - </h3>
+        <h4 id="result_confidence">Accuracy - </h4>
+      </div>
+
+      <div class="aliens-grid">
+        <img src="images/aliens-01.png" id="alien1" alt="Alien 1">
+        <img src="images/aliens-02.png" id="alien2" alt="Alien 2">
+        <img src="images/aliens-03.png" id="alien3" alt="Alien 3">
+        <img src="images/aliens-04.png" id="alien4" alt="Alien 4">
+      </div>
+    </main>
+
+    <footer class="footer">
+      Developed by - Saide Bin Sabid
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
