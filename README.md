@@ -1,5 +1,7 @@
 # 👽 Sound Controlled Aliens Web App
 
+**[🌍 Live Website Demo](https://saidebinsabid.github.io/sound_identification-p3/)**
+
 A fun, interactive, and intelligent web application that uses Artificial Intelligence (AI) to listen to sounds through your microphone and control dancing alien characters. 
 
 Play different sounds like a **Clap**, **Snap**, or ring a **Bell**, and watch specific aliens start dancing based on the sound they hear! It also features a sleek, modern, "glassmorphism" dark-themed design.
